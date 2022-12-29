@@ -66,7 +66,7 @@ def toileAraignee(origine, nbFormes, nbCourbes, distanceEntreCourbes, parametreP
     extremiteCourbesDroite = mat_rotation(origine, extremiteCourbesDroite, np.radians(-demiAngle))
     extremiteCourbesGauche = mat_rotation(origine, extremiteCourbesGauche, np.radians(demiAngle))
     
-    #Formons une listes des pivots pour chaque courbe de Bezier
+    #Formons une liste des pivots pour chaque courbe de Bezier
     pivots = [[origine[0]],[origine[1]], [1]]
     for i in range(nbCourbes-1):
         pivots[0].append(origine[0]) # en x il a meme position qu'origine
